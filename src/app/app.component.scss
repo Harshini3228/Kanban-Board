@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+.container {
+    font-family: "Trebuchet MS", sans-serif;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.column {
+    flex-basis: 25%;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.column h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.item {
+    background: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+:root {
+    --column-1: #a2622d;
+    --column-2: #1b6161;
+    --column-3: #248224;
+    --column-4: #a22d22;
+}
+
+body {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://raw.githubusercontent.com/rperry99/kanban-board/master/trees.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Quicksand, sans-serif;
+    overflow-y: hidden;
+    color: white;
+}
+
+.heading {
+    border-radius: 15px;
+    padding: 15px 8px;
+}
+
+.all-tasks {
+    background-color: #a2622d;
+}
+
+.in-progress {
+    background-color: #1b6161;
+}
+
+.completed {
+    background-color: #a22d22;
+}
+
+.add-btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    user-select: none;
+}
+
+.add-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.add-btn:active {
+    transform: scale(0.97);
+}
+
+.solid {
+    display: none;
+}
+
+.solid:hover {
+    transition: unset;
+    filter: brightness(95%);
+    color: white;
+}
+
+.plus-sign {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
+}
+
+.add-container {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+input {
+    width: 93%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px auto;
+    color: black;
+    padding: 10px;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
